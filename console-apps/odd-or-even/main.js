@@ -14,6 +14,9 @@ console.log(num);
 if (num % 2 === 0){
     console.log("Your number %d is even!", num);
 }
+else if (num % 2 !== 0){
+    console.log("Your number, %d is odd!", num);
+}
 else{
-    console.log("Your number %d is odd!", num);
+    console.log("Please enter anumber!");
 }
