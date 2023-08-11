@@ -1,6 +1,7 @@
 // Simple console-based game to determine whether a number is odd or even.
 // But this time i will be using ternary opeartors since i just watched a youtube tutorial on it
 // since the main object of this repo is to show others my learning experience and progress 
+
 // This code was written by Jesse Amarquaye in August, 2023 while learning the basiscs of javascript.
 
 
@@ -13,7 +14,7 @@ console.log("Now let's play!\n");
 
 num = input("Enter a number: ");
 even = "Your number is even!";
-odd = "Your number is odd";
+odd = "Your number is odd!";
 
 let message = (num % 2 === 0) ? even : odd;
 console.log(message);
