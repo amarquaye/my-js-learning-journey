@@ -10,3 +10,10 @@ console.log("Now let's play!\n");
 
 num = input("Enter a number: ");
 console.log(num);
+
+if (num % 2 === 0){
+    console.log("Your number %d is even!", num);
+}
+else{
+    console.log("Your number %d is odd!", num);
+}
