@@ -21,10 +21,9 @@ console.log("\nYour Body Mass Index(BMI) is %f", bmi);
 if (bmi < 18.5){
     console.log("You are underweight.");
 }
-else if (bmi === 18.5 || bmi < 25){
+else if (bmi >= 18.5 && bmi < 25){
     console.log("You are healthy.");
 }
 else{
     console.log("You are overweight.");
 }
-
