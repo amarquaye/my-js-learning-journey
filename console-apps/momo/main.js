@@ -57,7 +57,7 @@ switch (num){
                     // parseFloat(taxAmount);
                     // parseFloat(totalAmount);
 
-                    if (amount <= 10){
+                    if (amount <= 50){
                         fee = 0.00
                     } 
                     else{
@@ -68,16 +68,17 @@ switch (num){
                     totalAmount = parseFloat(amount) + parseFloat(fee) + parseFloat(taxAmount);
                     parseFloat(taxAmount);
             
-                    console.log("\nTransfer to %d for %f with Reference: %s", recipientNumber, amount, ref);
+                    console.log("\nTransfer to %d for GHS %f with Reference: %s", recipientNumber, amount, ref);
                     console.log("Fee is GHS %f", fee);
                     console.log("Tax amount is GHS %f", taxAmount);
                     console.log("Total Amount is GHS %f", totalAmount);
                     console.log("\nEnter MM PIN or 2 to cancel.");
+                    break;
                 }
                 else{
                     console.log("\nNumbers do not match!");
+                    break;
                 }
-                break;
 
             default:
                 console.error("Please enter a valid number!");
