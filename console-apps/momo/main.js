@@ -53,10 +53,6 @@ switch (num){
                     let taxAmount = 0.00;
                     let totalAmount = 0.00;
 
-                    // parseFloat(fee);
-                    // parseFloat(taxAmount);
-                    // parseFloat(totalAmount);
-
                     if (amount <= 50){
                         fee = 0.00
                     } 
@@ -83,7 +79,7 @@ switch (num){
             default:
                 console.error("Please enter a valid number!");
         }
-
+        break;
     default:
         console.error("Error, your response %d is not part of the options!", num);
 }
