@@ -37,7 +37,7 @@ switch (num){
 
         // Options under MoMo User
         switch (transferMoneyOptions){
-            
+
             // MoMO User 
             case 1:
                 let recipientNumber = input("Enter mobile number: ");
@@ -105,6 +105,15 @@ switch (num){
                 console.log("3) AYO Send with Care Balances or claim");
                 console.log("0) Back");
                 break;
+                // To becontinued later 
+
+            case 4:
+                console.log("\nFavorite");
+                console.log("1) Name");
+                console.log("2) Find");
+                console.log("0) Back");
+                break;
+                // To be continued later 
 
             default:
                 console.error("Please enter a valid number!");
