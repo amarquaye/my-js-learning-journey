@@ -115,6 +115,19 @@ switch (num){
                 break;
                 // To be continued later 
 
+            // Other Networks 
+            case 5:
+                console.log("\nTransfer Money to Other Networks.");
+                console.log("1) AirtelTigo");
+                console.log("2) Vodafone");
+                console.log("3) E-zwich");
+                console.log("4) G-Money");
+                console.log("5) ZeePay");
+                console.log("6) GhanaPay");
+                console.log("0) Back");
+                break;
+                // To be continued later 
+
             default:
                 console.error("Please enter a valid number!");
         }
