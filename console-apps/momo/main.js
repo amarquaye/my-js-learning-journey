@@ -37,6 +37,8 @@ switch (num){
 
         // Options under MoMo User
         switch (transferMoneyOptions){
+            
+            // MoMO User 
             case 1:
                 let recipientNumber = input("Enter mobile number: ");
                 parseInt(recipientNumber);
@@ -85,7 +87,25 @@ switch (num){
                     console.log("\nNumbers do not match!");
                     break;
                 }
+            
+            // Non MOMO User     
+            case 2:
+                let recipientName = input("Enter receiver name: ");
+                amount = input("Enter amount: ");
+                ref = input("Enter Reference: ");
+                secretCode = input("Enter Secret Code: ");
                 break;
+                // To be continued later 
+            
+            // Send with care 
+            case 3:
+                console.log("\nSend With Care.");
+                console.log("1) Mobile User");
+                console.log("2) MyCaretaker");
+                console.log("3) AYO Send with Care Balances or claim");
+                console.log("0) Back");
+                break;
+
             default:
                 console.error("Please enter a valid number!");
         }
