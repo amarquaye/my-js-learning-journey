@@ -68,14 +68,24 @@ switch (num){
                     console.log("Fee is GHS %f", fee);
                     console.log("Tax amount is GHS %f", taxAmount);
                     console.log("Total Amount is GHS %f", totalAmount);
-                    console.log("\nEnter MM PIN or 2 to cancel.");
+
+                    enterPin = input("Enter MM PIN or 2 to cancel: ");
+                    parseInt(enterPin);
+
+                    if (enterPin == PIN){
+                        console.log("\nYou have sent %d to %d", amount, recipientNumber);
+                        console.log("Thanks for using momo by Jesse Amarquaye");
+                    }
+                    else{
+                        console.error("Incorrect PIN!");
+                    }
                     break;
                 }
                 else{
                     console.log("\nNumbers do not match!");
                     break;
                 }
-
+                break;
             default:
                 console.error("Please enter a valid number!");
         }
