@@ -84,7 +84,7 @@ switch (num){
                     break;
                 }
                 else{
-                    console.log("\nNumbers do not match!");
+                    console.log("\nNumber Mismatch!");
                     break;
                 }
             
@@ -124,6 +124,14 @@ switch (num){
                 console.log("4) G-Money");
                 console.log("5) ZeePay");
                 console.log("6) GhanaPay");
+                console.log("0) Back");
+                break;
+                // To be continued later 
+
+            // Bank Account 
+            case 6:
+                console.log("\nGHIPSS Banks transfer service");
+                console.log("1) Wallet to Bank Account");
                 console.log("0) Back");
                 break;
                 // To be continued later 
