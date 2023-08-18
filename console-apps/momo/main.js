@@ -148,7 +148,31 @@ switch (num){
         console.log("2) Pay Bill");
         console.log("3) GhQR");
         console.log("4) Back");
+        // break;
+
+        momopayReply = input("Reply: ");
+        parseInt(momopayReply);
+
+        switch (momopayReply){
+            case 1:
+                merchantId = input("Enter Merchant id/Payment Reference: ");
+                console.log("Hey");
+                break;
+                // To be continued later 
+        }
         break;
+
+    // Airtime & Bundles 
+    case 3:
+        console.log("\nAirtime & Bundles");
+        console.log("1) Airtime");
+        console.log("2) Internet Bundles");
+        console.log("3) Fixed Broadband");
+        console.log("4) Schedule Airtime");
+        console.log("5) Just4U");
+        console.log("0) Back");
+        break;
+        // To be continued later 
 
     default:
         console.error("Error, your response %d is not part of the options!", num);
