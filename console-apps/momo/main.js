@@ -140,6 +140,16 @@ switch (num){
                 console.error("Please enter a valid number!");
         }
         break;
+
+    // MoMoPay 
+    case 2:
+        console.log("\nMoMoPay & PayBill");
+        console.log("1) MoMoPay");
+        console.log("2) Pay Bill");
+        console.log("3) GhQR");
+        console.log("4) Back");
+        break;
+
     default:
         console.error("Error, your response %d is not part of the options!", num);
 }
