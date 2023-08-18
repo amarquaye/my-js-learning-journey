@@ -1,5 +1,5 @@
 // Program to emulate the mobile money interface popularly know as momo in Ghana. 
-// In this program i will be using te switch case in javascript to achieve my global. 
+// In this program i will be using the switch case in javascript to achieve my goal. 
 // Created by Jesse Amarquaye in August, 2023. 
 
 const input = require("prompt-sync")();
@@ -15,7 +15,7 @@ console.log("5) Financial Services");
 console.log("6) My Wallet\n");
 
 // Take user input 
-let num = input("Enter response: ");
+let num = input("Reply: ");
 num = parseInt(num);
 
 // Initial switch statements
@@ -32,23 +32,23 @@ switch (num){
         console.log("0) Back\n");
         // break;
 
-        let transferMoneyOptions = input("Enter response: ");
-        transferMoneyOptions = parseInt(transferMoneyOptions);
+        let transferMoneyReply = input("Reply: ");
+        transferMoneyReply = parseInt(transferMoneyReply);
 
         // Options under MoMo User
-        switch (transferMoneyOptions){
+        switch (transferMoneyReply){
 
             // MoMO User 
             case 1:
                 let recipientNumber = input("Enter mobile number: ");
-                parseInt(recipientNumber);
+                recipientNumber = parseInt(recipientNumber);
                 let recipientNumber2 = input("Confirm Number: ");
-                parseInt(recipientNumber2);
+                recipientNumber2 = parseInt(recipientNumber2);
 
                 // Checking if both numbers are the same 
                 if (recipientNumber === recipientNumber2){
                     let amount = input("Enter Amount: ");
-                    parseFloat(amount);
+                    amount = parseFloat(amount);
                     let ref = input("Enter Reference: ");
 
                     let fee = 0.00;
@@ -64,15 +64,14 @@ switch (num){
                     
                     taxAmount = 0.01 * amount;
                     totalAmount = parseFloat(amount) + parseFloat(fee) + parseFloat(taxAmount);
-                    parseFloat(taxAmount);
             
                     console.log("\nTransfer to %d for GHS %f with Reference: %s", recipientNumber, amount, ref);
                     console.log("Fee is GHS %f", fee);
                     console.log("Tax amount is GHS %f", taxAmount);
                     console.log("Total Amount is GHS %f", totalAmount);
 
-                    enterPin = input("Enter MM PIN or 2 to cancel: ");
-                    parseInt(enterPin);
+                    let enterPin = input("Enter MM PIN or 2 to cancel: ");
+                    enterPin = parseInt(enterPin);
 
                     if (enterPin == PIN){
                         console.log("\nYou have sent %d to %d", amount, recipientNumber);
@@ -93,7 +92,7 @@ switch (num){
                 let recipientName = input("Enter receiver name: ");
                 amount = input("Enter amount: ");
                 ref = input("Enter Reference: ");
-                secretCode = input("Enter Secret Code: ");
+                let secretCode = input("Enter Secret Code: ");
                 break;
                 // To be continued later 
             
@@ -150,13 +149,12 @@ switch (num){
         console.log("4) Back");
         // break;
 
-        momopayReply = input("Reply: ");
-        parseInt(momopayReply);
+        let momopayReply = input("Reply: ");
+        momopayReply = parseInt(momopayReply);
 
         switch (momopayReply){
             case 1:
-                merchantId = input("Enter Merchant id/Payment Reference: ");
-                console.log("Hey");
+                let merchantId = input("Enter Merchant id/Payment Reference: ");
                 break;
                 // To be continued later 
         }
@@ -174,6 +172,30 @@ switch (num){
         break;
         // To be continued later 
 
+    // Allow Cash Out 
+    case 4:
+        console.log("\nAllow Cash Out");
+        console.log("1) Yes");
+        console.log("2) No");
+        console.log("0) Back");
+
+        let allowCashOutReply = input("Reply: ");
+        allowCashOutReply = parseInt(allowCashOutReply);
+
+        switch (allowCashOutReply){
+            case 1:
+                console.log("\nCash out is Allowed");
+                break;
+
+            case 2:
+                console.log("\nCash out is not Allowed");
+                break;
+
+            default:
+                console.error("Error, your response %d is not part of the options!", allowCashOutReply);
+        }
+        break;
+        
     default:
         console.error("Error, your response %d is not part of the options!", num);
 }
