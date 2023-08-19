@@ -195,6 +195,19 @@ switch (num){
                 console.error("Error, your response %d is not part of the options!", allowCashOutReply);
         }
         break;
+
+    // Financial Services 
+    case 5:
+        console.log("\nFinancial Services");
+        console.log("1) Bank Services");
+        console.log("2) Savings");
+        console.log("3) Loans");
+        console.log("4) Pensions and Investments");
+        console.log("5) Insurance");
+        console.log("6) Trade Shares");
+        console.log("0) Back");
+        break;
+
         
     default:
         console.error("Error, your response %d is not part of the options!", num);
