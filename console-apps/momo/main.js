@@ -208,7 +208,36 @@ switch (num){
         console.log("0) Back");
         break;
 
-        
+    // My Wallet 
+    case 6:
+        console.log("\nMy Wallet");
+        console.log("1) Check Balance");
+        console.log("2) Allow Cash Out");
+        console.log("3) My Approvals");
+        console.log("4) Report Fraud");
+        console.log("5) Statements");
+        console.log("6) Change & Reset PIN");
+        // break;
+
+        let myWalletReply = parseInt(input("Reply: "));
+
+        switch (myWalletReply){
+            case 1:
+                let checkBalanceReply = parseInt(input("Fee is GHS 0.00. Enter MM PIN: "));
+
+                if (checkBalanceReply == PIN){
+                    console.log("\nCurrent Balance: GHS 0.00");
+                    console.log("Available Balance: GHS 0.00");
+                    break;
+                }
+
+                break;
+
+            default:
+                console.error("Error, your response %d is not part of the options!", myWalletReply);
+        }
+        break;
+
     default:
         console.error("Error, your response %d is not part of the options!", num);
 }
