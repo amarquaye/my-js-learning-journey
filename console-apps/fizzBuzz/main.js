@@ -17,5 +17,5 @@ else if (num % 5 === 0){
     console.log("Buzz");
 }
 else{
-    console.error("Failed\nYour number %d is not divisible by either 3 or 5!", num);
+    console.error("Failed\nYour response %d is either not a valid number or indivisible by 3 or 5!", num);
 }
