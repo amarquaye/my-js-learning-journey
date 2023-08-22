@@ -15,8 +15,7 @@ console.log("5) Financial Services");
 console.log("6) My Wallet\n");
 
 // Take user input 
-let num = input("Reply: ");
-num = parseInt(num);
+let num = parseInt(input("Reply: "));
 
 // Initial switch statements
 
@@ -32,23 +31,19 @@ switch (num){
         console.log("0) Back\n");
         // break;
 
-        let transferMoneyReply = input("Reply: ");
-        transferMoneyReply = parseInt(transferMoneyReply);
+        let transferMoneyReply = parseInt(input("Reply: "));
 
         // Options under MoMo User
         switch (transferMoneyReply){
 
             // MoMO User 
             case 1:
-                let recipientNumber = input("Enter mobile number: ");
-                recipientNumber = parseInt(recipientNumber);
-                let recipientNumber2 = input("Confirm Number: ");
-                recipientNumber2 = parseInt(recipientNumber2);
+                let recipientNumber = parseInt(input("Enter mobile number: "));
+                let recipientNumber2 = parseInt(input("Confirm Number: "));
 
                 // Checking if both numbers are the same 
                 if (recipientNumber === recipientNumber2){
-                    let amount = input("Enter Amount: ");
-                    amount = parseFloat(amount);
+                    let amount = parseFloat(input("Enter Amount: "));
                     let ref = input("Enter Reference: ");
 
                     let fee = 0.00;
@@ -70,8 +65,7 @@ switch (num){
                     console.log("Tax amount is GHS %f", taxAmount);
                     console.log("Total Amount is GHS %f", totalAmount);
 
-                    let enterPin = input("Enter MM PIN or 2 to cancel: ");
-                    enterPin = parseInt(enterPin);
+                    let enterPin = parseInt(input("Enter MM PIN or 2 to cancel: "));
 
                     if (enterPin == PIN){
                         console.log("\nYou have sent %d to %d", amount, recipientNumber);
@@ -179,8 +173,7 @@ switch (num){
         console.log("2) No");
         console.log("0) Back");
 
-        let allowCashOutReply = input("Reply: ");
-        allowCashOutReply = parseInt(allowCashOutReply);
+        let allowCashOutReply = parseInt(input("Reply: "));
 
         switch (allowCashOutReply){
             case 1:
